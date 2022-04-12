@@ -1,23 +1,36 @@
-import logo from './logo.svg';
+import logo from './logo.png';
 import './App.css';
 
+function read()
+{
+     var txtFile = new XMLHttpRequest();
+     txtFile.open("GET", "https://storageapi2.fleek.co/e7b18505-5349-459d-9fba-f427d40e6079-bucket/text/firstPageDesc.txt", true);
+     txtFile.onreadystatechange = function()
+     {
+          if (txtFile.readyState === 4)
+          {
+               // Makes sure the document is ready to parse.
+               if (txtFile.status === 200)
+               {
+                    // Makes sure it's found the file.
+                    document.getElementById("desc").innerHTML = txtFile.responseText;
+               }
+          }
+     }
+     txtFile.send(null)
+}
+
 function App() {
+ read()
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
+    <div className="enEnter">
+        <img src={logo} className="EN-logo" alt="logo" />
+        <p id="desc">
+
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+        <div className="enEnterButton">
+         <a href="#">Enter The Digital Gallery</a>
+        </div>
     </div>
   );
 }
