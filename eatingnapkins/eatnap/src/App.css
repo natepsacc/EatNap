@@ -4,6 +4,7 @@
 }
 
 .enEnter {
+  opacity: 85%;
   width: 40vmin;
   margin-left: auto;
   margin-right: auto;
@@ -19,6 +20,27 @@
   background-size: 100%;
   background-position: 0 50%;
   animation: moveGradient 4s alternate infinite;
+}
+
+.bg {
+  animation: slide 3s ease-in-out infinite alternate;
+  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  bottom: 0;
+  left: -50%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
+}
+
+.bg2 {
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
+}
+
+.bg3 {
+  animation-duration: 5s;
 }
 
 .enEnterButton {
@@ -87,6 +109,14 @@ a.visited {
   }
   to {
     transform: rotate(360deg);
+  }
+}
+@keyframes slide {
+  0% {
+    transform: translateX(-25%);
+  }
+  100% {
+    transform: translateX(25%);
   }
 }
 

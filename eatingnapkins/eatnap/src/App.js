@@ -23,6 +23,10 @@ function read()
 function App() {
  read()
   return (
+    <div>
+    <div class="bg"></div>
+    <div class="bg bg2"></div>
+    <div class="bg bg3"></div>
     <div className="enEnter">
         <img src={logo} className="EN-logo" alt="logo" />
         <p id="desc">
@@ -32,6 +36,8 @@ function App() {
          <a href="#">Enter The Digital Gallery</a>
         </div>
     </div>
+    </div>
+
   );
 }
 
