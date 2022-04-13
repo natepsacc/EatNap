@@ -8,7 +8,7 @@
   text-align: center;
   opacity: 90%;
   max-width: 40vmin;
-  min-width: 10vmin;
+  min-width: 14vmin;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5vmin;
@@ -18,6 +18,28 @@
   border-top-left-radius: 35%;
   border-color: #bd1513;
   border-width: 3px;
+  border-style: dashed;
+  animation-duration: 2s;
+  animation: slide 3s ease-in-out infinite alternate;
+  background-size: 100%;
+  background-position: 0 50%;
+  animation: moveGradient 4s alternate infinite;
+}
+
+.enEnter2 {
+  text-align: center;
+  opacity: 90%;
+  max-width: 40vmin;
+  min-width: 14vmin;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0.5vmin;
+  text-align: center;
+  border-radius: 10px;
+  border-top-right-radius: 30%;
+  border-top-left-radius: 30%;
+  border-color: #f000e8;
+  border-width: 2.8px;
   border-style: dashed;
   animation-duration: 2s;
   animation: slide 3s ease-in-out infinite alternate;
