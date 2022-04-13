@@ -193,6 +193,7 @@ a.visited {
   }
   100% {
     opacity: 100;
+    width: transform(25%);
   }
 }
 
