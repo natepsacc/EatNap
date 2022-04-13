@@ -198,7 +198,6 @@ a.visited {
     opacity: 100;
     filter: brightness(200%);
     filter: saturate(200);
-    filter: blur(25);
   }
 }
 
