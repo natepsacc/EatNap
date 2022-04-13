@@ -191,10 +191,14 @@ a.visited {
   0% {
     opacity: 20;
     filter: brightness(100%);
+    filter: saturate(100);
+    filter: blur(0);
   }
   100% {
     opacity: 100;
     filter: brightness(200%);
+    filter: saturate(200);
+    filter: blur(25);
   }
 }
 
