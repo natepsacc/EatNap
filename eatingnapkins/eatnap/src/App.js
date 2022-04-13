@@ -43,6 +43,8 @@ function App() {
  read()
   return (
     <div>
+    <img src={logo} className="EN-logo" alt="logo" />
+
     <div class="bggg"></div>
     <div class="bggg bg2"></div>
     <div class="bggg bg3"></div>
@@ -66,7 +68,6 @@ function App() {
         <div className="enEnter2" id="enEnter2">
 <div className="enEnter" id="enEnter">
     <div className="enEnter2" id="enEnter2">
-        <img src={logo} className="EN-logo" alt="logo" />
         <p id="desc">
 
         </p>
