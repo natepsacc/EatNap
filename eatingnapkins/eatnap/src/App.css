@@ -190,9 +190,11 @@ a.visited {
 @keyframes pulsefade {
   0% {
     opacity: 20;
+    filter: brightness(100%);
   }
   100% {
     opacity: 100;
+    filter: brightness(200%);
   }
 }
 
