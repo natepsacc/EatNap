@@ -1,5 +1,4 @@
 import logo from './logo.png';
-import './post.css';
 
 
 

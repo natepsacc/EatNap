@@ -47,6 +47,13 @@ function App() {
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
     <div className="enEnter" id="enEnter">
+        <div className="enEnter" id="enEnter">
+<div className="enEnter" id="enEnter">
+    <div className="enEnter" id="enEnter">
+    <div className="enEnter" id="enEnter">
+        <div className="enEnter" id="enEnter">
+<div className="enEnter" id="enEnter">
+    <div className="enEnter" id="enEnter">
         <img src={logo} className="EN-logo" alt="logo" />
         <p id="desc">
 
@@ -57,7 +64,13 @@ function App() {
         </div>
     </div>
     </div>
-
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
   );
 }
 
