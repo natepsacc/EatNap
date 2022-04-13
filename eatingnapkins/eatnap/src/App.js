@@ -43,6 +43,11 @@ function App() {
  read()
   return (
     <div>
+    <div class="bggg"></div>
+    <div class="bggg bg2"></div>
+    <div class="bggg bg3"></div>
+    <div class="bggg bg4"></div>
+
     <div class="bgg"></div>
     <div class="bgg bg2"></div>
     <div class="bgg bg3"></div>
@@ -54,13 +59,13 @@ function App() {
     <div class="bgg bg4"></div>
 
     <div className="enEnter" id="enEnter">
-        <div className="enEnter" id="enEnter">
+        <div className="enEnter2" id="enEnter2">
 <div className="enEnter" id="enEnter">
+    <div className="enEnter2" id="enEnter2">
     <div className="enEnter" id="enEnter">
-    <div className="enEnter" id="enEnter">
-        <div className="enEnter" id="enEnter">
+        <div className="enEnter2" id="enEnter2">
 <div className="enEnter" id="enEnter">
-    <div className="enEnter" id="enEnter">
+    <div className="enEnter2" id="enEnter2">
         <img src={logo} className="EN-logo" alt="logo" />
         <p id="desc">
 
