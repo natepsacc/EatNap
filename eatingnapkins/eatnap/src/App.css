@@ -189,7 +189,7 @@ a.visited {
 }
 @keyframes pulsefade {
   0% {
-    opacity: 55;
+    opacity: 0;
   }
   100% {
     opacity: 100;
