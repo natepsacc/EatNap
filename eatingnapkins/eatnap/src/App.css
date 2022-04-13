@@ -7,7 +7,8 @@
 .enEnter {
   text-align: center;
   opacity: 85%;
-  width: 40vmin;
+  max-width: 40vmin;
+  min-width: 10vmin;
   margin-left: auto;
   margin-right: auto;
   margin-top: 1.5vmin;
@@ -16,7 +17,7 @@
   border-top-right-radius: 35%;
   border-top-left-radius: 35%;
   border-color: #bd1513;
-  border-width: 7px;
+  border-width: 3px;
   border-style: dashed;
   animation-duration: 2s;
   animation: slide 3s ease-in-out infinite alternate;
