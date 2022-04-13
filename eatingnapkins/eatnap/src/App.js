@@ -73,7 +73,7 @@ function App() {
         </p>
 
         <div id="enEnterButton" className="enEnterButton">
-         <a href="#" onClick={rmbut} >Enter The Digital Gallery</a>
+         <a href="/postindex.js" onClick="" >Enter The Digital Gallery</a>
         </div>
     </div>
     </div>
