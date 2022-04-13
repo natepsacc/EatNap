@@ -10,32 +10,39 @@
   width: 40vmin;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 15vmin;
+  margin-top: 1.5vmin;
   text-align: center;
   border-radius: 10px;
   border-top-right-radius:35%;
   border-top-left-radius:35%;
-  border-color: #bad1f0;
+  border-color: #bd1513;
   border-width: 7px;
-  border-style: solid;
+  border-style: dashed;
   animation-duration: 2s;
 
-  background: linear-gradient(
-    31.8deg,
-    hsl(120, 85%, 66%),
-    hsl(269, 85%, 66%),
-    hsl(314, 85%, 66%),
-    hsl(359, 85%, 66%),
 
-  );
+  animation:slide 3s ease-in-out infinite alternate;
+
   background-size: 100%;
   background-position: 0 50%;
   animation: moveGradient 4s alternate infinite;
 }
 
+.bgg {
+  animation:slide 2s ease-in-out infinite alternate;
+  background-image: linear-gradient(7deg,#f000e8 50%,#C9450A 0);
+  bottom:0;
+  left:-50%;
+  opacity:.5;
+  position:fixed;
+  right:-50%;
+  top:0;
+  z-index:-1;
+}
+
 .bg {
-  animation:slide 3s ease-in-out infinite alternate;
-  background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+  animation:slide 2s ease-in-out infinite alternate;
+  background-image: linear-gradient(-90deg,#f000e8 50%,#C9450A 0);
   bottom:0;
   left:-50%;
   opacity:.5;
@@ -47,13 +54,16 @@
 
 .bg2 {
   animation-direction:alternate-reverse;
-  animation-duration:4s;
+  animation-duration:3s;
 }
 
 .bg3 {
-  animation-duration:5s;
+  animation-duration:4s;
 }
 
+.bg4 {
+  animation-duration:4.3s;
+}
 
 .enEnterButton{
 
@@ -62,15 +72,14 @@
   margin-bottom:  5vmin;
   margin-top: 5vmin;
   padding: 5px;
-  background-color:#496863;
 
 
-  border-style: groove;
-  border-radius: 10px;
+  border-style: solid;
+  border-radius: 3px;
   border-width: 5px;
-  border-color: #bad1f0;
+  border-color: #b7f23c;
   text-decoration: none;
-  color: #f176f1;
+  color: #b7f23c;
   width: 7vmin;
 
 }

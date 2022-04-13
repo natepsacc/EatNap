@@ -43,9 +43,16 @@ function App() {
  read()
   return (
     <div>
+    <div class="bgg"></div>
+    <div class="bgg bg2"></div>
+    <div class="bgg bg3"></div>
+    <div class="bgg bg4"></div>
+
     <div class="bg"></div>
     <div class="bg bg2"></div>
     <div class="bg bg3"></div>
+    <div class="bgg bg4"></div>
+
     <div className="enEnter" id="enEnter">
         <div className="enEnter" id="enEnter">
 <div className="enEnter" id="enEnter">
