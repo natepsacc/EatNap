@@ -4,6 +4,7 @@
 }
 
 .enEnter {
+  text-align: center;
   opacity: 85%;
   width: 40vmin;
   margin-left: auto;
@@ -16,6 +17,7 @@
   border-color: #bad1f0;
   border-width: 7px;
   border-style: solid;
+  animation-duration: 2s;
   background: linear-gradient(31.8deg, hsl(120deg, 85%, 66%), hsl(269deg, 85%, 66%), hsl(314deg, 85%, 66%), hsl(359deg, 85%, 66%));
   background-size: 100%;
   background-position: 0 50%;
