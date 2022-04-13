@@ -191,7 +191,7 @@ a.visited {
   0% {
     opacity: 20;
     filter: brightness(100%);
-    filter: saturate(100);
+    filter: saturate(0);
     filter: blur(0);
   }
   100% {
