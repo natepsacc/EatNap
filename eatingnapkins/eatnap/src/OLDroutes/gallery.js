@@ -1,12 +1,8 @@
-import logo from './logo.png';
-import './App.css';
-import post from './post.js';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import StandardImageList from './imageList.js';
-import { HashRouter, Route, Routes } from "react-router-dom";
-
-
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import logo from './logo.png';
+import App from './src/App.js';
 function read()
 {
 
@@ -20,7 +16,7 @@ function read()
                if (txtFile.status === 200)
                {
                     // Makes sure it's found the file.
-                    document.getElementById("desc").innerText = txtFile.responseText;
+                    document.getElementById("desc").innerHTML = txtFile.responseText;
                }
           }
      }
@@ -38,7 +34,6 @@ function rmbut(){
   enEnter.style.marginTop = "1vh";
   enEnter.style.height = "95vh";
 
-  post();
 
 }
 
@@ -64,20 +59,15 @@ function RectangleSlide(props) {
 
 function ENLogo(props) {
   return(
-    <a href='/'>
-    <img src={logo} className="ENlogo" alt="logo"/>
-    </a>
+    <img src={logo} className="EN-logo" alt="logo" />
 );
 }
 
-function Landing(props) {
-
+function ENEnter(props) {
   read();
 
   return(
-
-    <span>
-    <RectangleSlide/>
+    <div>
   <div className="enEnter" id="enEnter">
       <div className="enEnter2" id="enEnter2">
 <div className="enEnter" id="enEnter">
@@ -86,14 +76,12 @@ function Landing(props) {
       <div className="enEnter2" id="enEnter2">
 <div className="enEnter" id="enEnter">
   <div className="enEnter2" id="enEnter2">
-  <ENLogo/>
-
       <p id="desc">
 
       </p>
 
       <div id="enEnterButton" className="enEnterButton">
-       <a href="#/gallery"  >Enter The Digital Gallery</a>
+       <a href="/gallery"  >Enter The Digital Gallery</a>
       </div>
   </div>
   </div>
@@ -103,58 +91,35 @@ function Landing(props) {
   </div>
   </div>
   </div>
-  </span>
+  </div>
 );
 
 
 }
-function borders(props){
-
-}
-
-
-function GalleryLayout(props){
-    console.log("BR Hello world");
-    return(
-      <div>
-      <ENLogo/>
-      <RectangleSlide/>
-
-  <div class="interiorGal">
-
-<StandardImageList />
-
-  </div>
-  </div>
-
-
-  );
-
-
-}
 
 
 
 
 
 
-function App() {
+
+function GalleryLayout() {
 
   document.getElementById("desc");
 
   return (
-    <span>
-
-		<Routes>
-       <Route path='/gallery' element={<GalleryLayout /> } />
-       <Route  path='/' element={<Landing/> } />
-
-
+    <div>
+    <BrowserRouter>
+    <Routes>
+       <Route path='/' element={<App />} />
+       <Route path='gallery' element={<GalleryLayout />} />
     </Routes>
-</span>
-
+     </BrowserRouter>
+    <RectangleSlide />
+    <ENLogo />
+    </div>
   );
 
 }
 
-export default App;
+export default GalleryLayout;
